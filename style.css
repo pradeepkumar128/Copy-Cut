@@ -1,0 +1,66 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+/* Button Area */
+#btn-area {
+    margin-bottom: 15px;
+}
+
+#copy-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+#copy-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Content Area */
+#content-area {
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #34495e;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Adding Copy Icon */
+#copy-btn::before {
+    content: "\f0c5"; /* FontAwesome copy icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
